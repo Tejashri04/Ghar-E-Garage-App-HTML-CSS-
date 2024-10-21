@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghar E Garage - Booking</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container{
+            border: 1px solid black;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label{
+            display: block ;
+            margin: 10px 0 5px;
+        }
+
+        input,select{
+            padding: 5px;
+            width : 100%;
+            margin-bottom: 10px;
+        }
+
+        button{
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logout {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book a Service</h2>
+        <form action="/Ghar E Garage App/booking-success.html" method="GET">
+            <label for="device">Device Type :</label>
+            <select id="device" name="device">
+                <option value="mobile">Mobile Phone</option>
+                <option value="mobile">Tablet</option>
+                <option value="mobile">Laptop</option>
+                <option value="mobile">Smartwatch</option>
+            </select>
+
+            <label for="data">Preferred Date : </label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <a href="login.html" class="logout">Logout</a>
+    </div>
+</body>
+</html>
